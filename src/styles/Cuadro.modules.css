@@ -1,0 +1,14 @@
+.cuadro {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Helvetica", sans-serif;
+}
+
+.cuadro:hover {
+    background-color: #555;
+}

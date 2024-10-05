@@ -1,0 +1,17 @@
+.barra {
+    position: fixed;
+    top: 0;
+    right: 20px; /* Padding to the right */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px; /* Beveled border */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5); /* Inner glow for text */
+    display: flex; /* Display as flexbox */
+    gap: 10px; /* Space between items */
+}
+
+.barra p {
+    margin: 0;
+}
