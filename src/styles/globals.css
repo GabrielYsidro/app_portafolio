@@ -38,39 +38,68 @@ a:hover {
 
 .presentacion {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 50vh; /* Altura completa de la ventana */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */ 
     text-align: center;
+    gap: 20px; /* Espacio entre los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    height: 50vh; /* Ocupa toda la altura de la ventana */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
 }
 
-.titulo {
-    width: 50%; /* Ocupa la mitad del ancho */
-    text-align: center;
-}
-
-.contenido {
-    display: flex;
-    width: 100%; /* Ocupa todo el ancho */
-    max-width: 700px; /* Ancho máximo del contenido */
-}
 .izquierda {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    width: 60%; /* Ocupa la mitad del ancho */
-}
-
-.imagen {
-    margin-top: 20px; /* Espacio entre el título y la imagen */
-    display: flex;
-    justify-content: left; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Asegura que la imagen esté debajo del título */
+    align-items: center; /* Centra horizontalmente el contenido */
+    width: 50%; /* Ocupará todo el ancho disponible */
 }
 
 .derecha {
-    text-align: left; /* Alinea el texto a la izquierda */ /* Espacio entre la imagen y el texto */
-    width:40%;
+    text-align: left; /* Centra el texto horizontalmente */
+    width: 40%; /* Ocupará todo el ancho disponible */
+}
+
+.titulo {
+    text-align: center; /* Alinea el título al centro */
+}
+
+.contenido {
+    display: flex; /* Permite flexibilidad en la disposición */
+    align-items: center; /* Centra todo el contenido horizontalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    text-align: center; /* Alinea todo el texto al centro */
+}
+/* Estilos para la imagen */
+.imagen {
+    margin-top: 20px; /* Espacio entre el título y la imagen */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+.tecnologias {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
+    margin-top: 5%; /* Espacio entre el contenido anterior y las tecnologías */
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
+    margin-top: 5%; /* Espacio entre el contenido anterior y los proyectos */
+}
+
+.contacto {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
+    margin-top: 5%; /* Espacio entre el contenido anterior y los proyectos */
 }
 
 @keyframes blink {
