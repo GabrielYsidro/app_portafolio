@@ -9,11 +9,11 @@ const Cuadro: React.FC<CuadroProps> = ({ children }) => {
     const path = usePath(children);
 
     return(
-        <div className="cuadro">
-            <Link href={path}>
-            {children}
-            </Link>
-        </div>
+        <Link href={path}>
+            <div className="cuadro">
+                <span>{children}</span>
+            </div>
+        </Link>
         ) 
 };
 

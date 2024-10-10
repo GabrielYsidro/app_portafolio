@@ -1,14 +1,32 @@
 .cuadro {
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color: #00ff00; /* Verde */
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: "Helvetica", sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    font-family: "Fira Code", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px; /* Ancho mínimo */
+    max-width: 300px; /* Ancho máximo */
+    min-height: 50px; /* Altura mínima */
+    max-height: 100px; /* Altura máxima */
+    width: 100%; /* Ancho responsivo */
+    height: auto; /* Altura responsiva */
 }
 
 .cuadro:hover {
-    background-color: #555;
+    background-color: rgb(193, 247, 107);
+    color: black;
+}
+
+.cuadro span {
+    color: inherit; /* Asegura que el color del texto herede el color del cuadro */
+}
+
+.cuadro:hover span {
+    color: black; /* Asegura que el color del texto cambie a negro en hover */
 }
