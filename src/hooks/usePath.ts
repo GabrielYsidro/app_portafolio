@@ -7,11 +7,11 @@ export const usePath = (name: React.ReactNode): string => {
       case 'Home':
         return '/';
       case 'About':
-        return '/about';
+        return '/About';
       case 'Contact':
-        return '/contact';
+        return '/Contact';
       case 'Project':
-        return '/project';
+        return '/Project';
       default:
         return '/';
     }
