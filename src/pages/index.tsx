@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 
 export const Home = () => {
 
@@ -5,11 +7,27 @@ export const Home = () => {
   return(
     <div>
       <section className="presentacion">
-      <div>
-        <h1>Porta Gabo</h1>
-        <p>Un servidor web creado por Gabriel</p>
-      </div>
-    </section>
+        <div className="contenido">
+          <div className="izquierda">
+            <div className="titulo">
+              <h1>Hola! Me llamo</h1>
+              <h1>Gabriel Ysidro<span className="cursor"></span></h1>
+            </div>
+            <div className="imagen">
+              <Image src="/toxan.png" alt="Descripción de la imagen" width={200} height={200} />
+            </div>
+          </div>
+          <div className="derecha">
+            <p>Soy un estudiante de ingenieria de Sistemas en la Universidad de Lima.
+              Actualmente, me desempeño como desarrollador fullstack.
+              Trabajo con tecnologías como React y Next.js para el frontend,
+              así como PostgreSQL y Express.js para el backend.
+              Me gusta innovar con soluciones creativas y 
+              obtener resultados de calidad.
+            </p>
+          </div>
+        </div>
+      </section>
 
     <section className="tecnologias">
         <h1>

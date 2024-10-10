@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: 'Fira Code', sans-serif;
-    background-color: #353030; /* Fondo negro */
+    background-color: #303030; /* Fondo negro */
     color: #fff; /* Texto blanco */
 }
 
@@ -33,4 +33,59 @@ a {
 
 a:hover {
     color: #fff; /* Blanco */
+}
+
+
+.presentacion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50vh; /* Altura completa de la ventana */
+    text-align: center;
+}
+
+.titulo {
+    width: 50%; /* Ocupa la mitad del ancho */
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 700px; /* Ancho máximo del contenido */
+}
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    width: 60%; /* Ocupa la mitad del ancho */
+}
+
+.imagen {
+    margin-top: 20px; /* Espacio entre el título y la imagen */
+    display: flex;
+    justify-content: left; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.derecha {
+    text-align: left; /* Alinea el texto a la izquierda */ /* Espacio entre la imagen y el texto */
+    width:40%;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: #00ff00;
+    animation: blink 1s step-end infinite;
+    position: relative;
+    margin-left: 5px; /* Ajusta la posición del cursor */
+    transform: translateY(0.1em);
 }
