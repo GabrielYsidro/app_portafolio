@@ -80,10 +80,15 @@ a:hover {
 
 .tecnologias {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    gap: 10px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
-    margin-top: 5%; /* Espacio entre el contenido anterior y las tecnologías */
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: 5%;
+    background-color: #00ff00;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    width : 80%;
 }
 
 .proyectos {
@@ -96,11 +101,27 @@ a:hover {
 
 .contacto {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    gap: 20px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
-    margin-top: 5%; /* Espacio entre el contenido anterior y los proyectos */
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 5%; 
+    background-color: #00ff00;
+    max-width: 1500px;
+    margin: auto;
+    border-radius: 5px;
+    width: 80%;
 }
+
+.tecnologias h1 {
+    color: #000;
+}
+
+
+
+.contacto h1 {
+    color: #000;
+}
+
 
 @keyframes blink {
     0% { opacity: 1; }
@@ -118,3 +139,8 @@ a:hover {
     margin-left: 5px; /* Ajusta la posición del cursor */
     transform: translateY(0.1em);
 }
+
+.proyectos {
+    margin-bottom: 50px;
+}
+
