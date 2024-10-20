@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: 'Fira Code', sans-serif;
-    background-color: #303030; /* Fondo negro */
+    background-color: #15201c; /* Fondo negro */
     color: #fff; /* Texto blanco */
 }
 
@@ -83,12 +83,43 @@ a:hover {
     justify-content: center;
     gap: 10px; 
     flex-wrap: wrap; 
+    flex-direction: column;
     margin-top: 5%;
-    background-color: #00ff00;
-    max-width: 1500px;
+    background-color: #616e66;
+    max-width: 1200px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 10px;
     width : 80%;
+}
+
+.tecnologias h1 {
+    color: #38d65b;
+    margin:auto;
+    text-align: center;
+    margin-top: 3%;
+    height:auto;
+    font-size: 2em;
+}
+
+.iconos {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    margin-top: 2%;
+    column-gap: 3%; /* Espacio entre las filas */
+}
+
+.tabla img {
+    width: 60%; /* La imagen abarcará todo el espacio del recuadro */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 15%;
+    margin-top: 15%;
+    max-width: 400px;
 }
 
 .proyectos {
@@ -105,18 +136,12 @@ a:hover {
     gap: 20px; 
     flex-wrap: wrap; 
     margin-top: 5%; 
-    background-color: #00ff00;
+    background-color: #616e66;
     max-width: 1500px;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 80%;
 }
-
-.tecnologias h1 {
-    color: #000;
-}
-
-
 
 .contacto h1 {
     color: #000;

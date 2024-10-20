@@ -1,9 +1,7 @@
 import Image from 'next/image';
-
+import Tabla from '../components/Tabla/Tabla';
 
 export const Home = () => {
-
-
   return(
     <div>
       <section className="presentacion">
@@ -14,7 +12,7 @@ export const Home = () => {
               <h1>Gabriel Ysidro<span className="cursor"></span></h1>
             </div>
             <div className="imagen">
-              <Image src="/toxan.png" alt="Descripción de la imagen" width={200} height={200} />
+              <Image src="/toxan.png" alt="Descripción de la imagen" width={300} height={200} />
             </div>
           </div>
           <div className="derecha">
@@ -33,6 +31,9 @@ export const Home = () => {
         <h1>
           Tecnologias
         </h1>
+        <div className='iconos'>
+          <Tabla ancho={4} largo={2}/>
+        </div>
     </section>
 
     <section className="proyectos">
