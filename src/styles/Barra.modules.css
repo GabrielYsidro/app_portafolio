@@ -3,7 +3,7 @@
     top: 0;
     left: 0; /* Alinea la barra a la izquierda */
     width: 100%; /* Asegura que la barra ocupe todo el ancho de la pantalla */
-    background-color: black;
+    background-color: #808782;
     color: white;
     padding: 10px 20px;
     border-radius: 0; /* Sin bordes redondeados */
@@ -21,21 +21,3 @@
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
-/* Media queries para ajustes específicos */
-@media (max-width: 768px) {
-    .barra {
-        padding: 10px; /* Reduce el padding en pantallas más pequeñas */
-        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas más pequeñas */
-        align-items: flex-start; /* Alinea los elementos al inicio en pantallas más pequeñas */
-        overflow: visible; /* Permite que los elementos se muestren completamente */
-    }
-}
-
-@media (max-width: 480px) {
-    .barra {
-        padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
-        flex-direction: column; /* Mantiene la dirección del flex en columna */
-        align-items: flex-start; /* Alinea los elementos al inicio en pantallas muy pequeñas */
-        overflow: visible; /* Permite que los elementos se muestren completamente */
-    }
-}

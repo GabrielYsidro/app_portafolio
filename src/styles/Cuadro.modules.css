@@ -1,7 +1,7 @@
 .cuadro {
     padding: 10px;
-    background-color: black;
-    color: #00ff00; /* Verde */
+    background-color: #808782;
+    color: #121212; /* Verde */
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
@@ -19,7 +19,7 @@
 }
 
 .cuadro:hover {
-    background-color: rgb(193, 247, 107);
+    background-color: rgb(209, 255, 215);
     color: black;
 }
 
