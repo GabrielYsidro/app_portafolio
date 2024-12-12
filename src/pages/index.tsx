@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Tabla from '../components/Tabla/Tabla';
+import Proyecto from '../components/Proyecto/Proyecto'
 
 export const Home = () => {
   return(
@@ -12,12 +14,14 @@ export const Home = () => {
               <h1>Gabriel Ysidro<span className="cursor"></span></h1>
             </div>
             <div className="imagen">
-              <Image src="/toxan.png" alt="Descripción de la imagen" width={300} height={200} />
+              <a target="_blank" href="https://www.linkedin.com/in/gawayspa">
+              <Image src="/Gabo.jpeg" alt="Descripción de la imagen" width={300} height={200} />
+              </a>
             </div>
           </div>
           <div className="derecha">
-            <p>Soy un estudiante de ingenieria de Sistemas en la Universidad de Lima.
-              Actualmente, me desempeño como desarrollador fullstack.
+            <p>Soy un estudiante de Ingenieria de Sistemas en la Universidad de Lima.
+              Actualmente, me desempeño como Desarrollador Fullstack.
               Trabajo con tecnologías como React y Next.js para el frontend,
               así como PostgreSQL y Express.js para el backend.
               Me gusta innovar con soluciones creativas y 
@@ -28,7 +32,7 @@ export const Home = () => {
       </section>
 
     <section className="tecnologias">
-        <h1>
+        <h1 className='principal'>
           Tecnologias
         </h1>
         <div className='iconos'>
@@ -37,19 +41,22 @@ export const Home = () => {
     </section>
 
     <section className="proyectos">
-        <h1>
+        <h1 className='principal'>
           Proyectos
         </h1>
+        <Proyecto name={"Sistema de reporte de incidencias"}>
+
+        </Proyecto>
     </section>
 
     <section className="contacto">
-        <h1>
+        <h1 className='principal'>
           Contacto
         </h1>
       </section>
 
       <section className="prueba">
-        <h1>
+        <h1 className='principal'>
           Prueba
         </h1>
       </section>

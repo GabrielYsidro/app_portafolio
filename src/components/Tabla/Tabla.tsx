@@ -15,7 +15,7 @@ export const Tabla: React.FC<TablaProps> = ({ children, ancho, largo }) => {
                 {
                     fila.map((columna, j) => (
                         <div className="columna" key={j}>
-                            <Image src={urls[j][i]} alt='No se encuentra' width={100} height={75} ></Image>
+                            <Image className="picture" src={urls[j][i]} alt='No se encuentra' width={100} height={75} ></Image>
                         </div>
                     ))
                 }

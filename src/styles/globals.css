@@ -50,14 +50,16 @@ a:hover {
 
 .izquierda {
     display: flex;
-    flex-direction: column; /* Asegura que la imagen esté debajo del título */
-    align-items: center; /* Centra horizontalmente el contenido */
-    width: 50%; /* Ocupará todo el ancho disponible */
+    flex-direction: column; 
+    width: 40%; 
 }
 
 .derecha {
     text-align: left; /* Centra el texto horizontalmente */
-    width: 40%; /* Ocupará todo el ancho disponible */
+    width: 50%; 
+    font-size: 100%;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px rgba(152, 221, 125, 0.945);
 }
 
 .titulo {
@@ -71,11 +73,16 @@ a:hover {
     text-align: center; /* Alinea todo el texto al centro */
 }
 /* Estilos para la imagen */
-.imagen {
-    margin-top: 20px; /* Espacio entre el título y la imagen */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+.imagen img {
+    max-width: 40%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: box-shadow 0.4s ease-in-out;
+}
+.imagen img:hover {
+    box-shadow : 0 0 15px 10px rgb(204, 226, 216);
 }
 
 
@@ -85,7 +92,6 @@ a:hover {
     gap: 10px; 
     flex-wrap: wrap; 
     flex-direction: column;
-    margin-top: 5%;
     background-color: #7a7f7b;
     max-width: 1200px;
     margin: 0 auto;
@@ -93,14 +99,6 @@ a:hover {
     width : 80%;
 }
 
-.tecnologias h1 {
-    color: black;
-    margin:auto;
-    text-align: center;
-    margin-top: 3%;
-    height:auto;
-    font-size: 2em;
-}
 
 .iconos {
     text-align: center;
@@ -123,29 +121,45 @@ a:hover {
     max-width: 400px;
 }
 
-.proyectos {
+.principal {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    gap: 20px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten al ancho */
-    margin-top: 5%; /* Espacio entre el contenido anterior y los proyectos */
+    justify-content: center;
+    flex-wrap: wrap; 
+    color: #ace1af;
+    margin:auto;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 2em;
+    text-shadow: 5px 3px 5px black;
+
+    width : 80%;
+    gap: 20px; 
 }
 
-.contacto {
-    display: flex;
+.proyectos {
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #7a7f7b;
+    width : 80%;
+    max-width: 1200px;
+}
+
+.prueba {
+    margin: 0 auto;
+}
+
+.contacto{
     justify-content: center;
     gap: 20px; 
     flex-wrap: wrap; 
     margin-top: 5%; 
     background-color: #7a7f7b;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
     border-radius: 10px;
     width: 80%;
-}
-
-.contacto h1 {
-    color: #121212;
+    border-radius: 10px;
+    padding-bottom: 0%;
 }
 
 
@@ -169,4 +183,3 @@ a:hover {
 .proyectos {
     margin-bottom: 50px;
 }
-

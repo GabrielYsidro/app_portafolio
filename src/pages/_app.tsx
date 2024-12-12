@@ -3,7 +3,9 @@ import { AppProps } from 'next/app';
 import Barra from '../components/Barra/Barra';
 import '../styles/Barra.modules.css';
 import '../styles/Cuadro.modules.css';
+import '../styles/Tabla.modules.css'
 import '../styles/globals.css';
+import '../styles/Proyecto.modules.css'
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {

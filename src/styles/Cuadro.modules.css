@@ -1,7 +1,7 @@
 .cuadro {
     padding: 10px;
     background-color: #808782;
-    color: #121212; /* Verde */
+    color: #ace1af; /* Verde */
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
@@ -16,11 +16,12 @@
     max-height: 100px; /* Altura máxima */
     width: 100%; /* Ancho responsivo */
     height: auto; /* Altura responsiva */
+    text-shadow: 4px 3px 3px black;
 }
 
 .cuadro:hover {
-    background-color: rgb(209, 255, 215);
-    color: black;
+    background-color: rgba(163, 233, 173, 0.733);
+    color: #ace1af;
 }
 
 .cuadro span {
@@ -28,5 +29,5 @@
 }
 
 .cuadro:hover span {
-    color: black; /* Asegura que el color del texto cambie a negro en hover */
+    color: #ace1af; /* Asegura que el color del texto cambie a negro en hover */
 }
