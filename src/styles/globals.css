@@ -62,8 +62,9 @@ a:hover {
     text-shadow: 3px 2px 2px rgba(152, 221, 125, 0.945);
 }
 
-.titulo {
-    text-align: center; /* Alinea el título al centro */
+.titulo2 {
+    text-align: center;
+    font-weight: bold; /* Alinea el título al centro */
 }
 
 .contenido {

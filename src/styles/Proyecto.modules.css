@@ -8,4 +8,29 @@
     margin-top: 5%;
 }
 
+.proy1 {
+    width: 100%; 
+    overflow: hidden;
+}
+
+.img-slider {
+    text-align: center;
+    margin:auto;
+    
+}
+
+.titulo {
+    color: rgb(110, 238, 114);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px black;
+    padding-bottom: 2%;
+}
+
+
+
+
+
+
 

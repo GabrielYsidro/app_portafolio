@@ -1,15 +1,17 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Tabla from '../components/Tabla/Tabla';
 import Proyecto from '../components/Proyecto/Proyecto'
+import datosProyecto from '../const/consts.js'
 
 export const Home = () => {
+
+  
   return(
     <div>
       <section className="presentacion">
         <div className="contenido">
           <div className="izquierda">
-            <div className="titulo">
+            <div className="titulo2">
               <h1>Hola! Me llamo</h1>
               <h1>Gabriel Ysidro<span className="cursor"></span></h1>
             </div>
@@ -44,9 +46,12 @@ export const Home = () => {
         <h1 className='principal'>
           Proyectos
         </h1>
-        <Proyecto name={"Sistema de reporte de incidencias"}>
-
+        <section className='proy1'>
+        <Proyecto name={"Sistema de reporte de incidencias"} images={datosProyecto}>
         </Proyecto>
+
+        </section>
+        
     </section>
 
     <section className="contacto">
