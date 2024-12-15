@@ -6,7 +6,6 @@ import Slider from 'react-slick';
 
 export const Proyecto : React.FC<ProyectoProps> = ({name, images}) => {
     const config =  {
-        dots : true,
         infinite : true,
         speed: 300,
         slidesToShow : 1,

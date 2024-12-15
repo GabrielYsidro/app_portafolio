@@ -9,7 +9,7 @@ const Cuadro: React.FC<CuadroProps> = ({ children }) => {
     const path = usePath(children);
 
     return(
-        <Link href={path}>
+        <Link href={path} legacyBehavior>
             <div className="cuadro">
                 <span>{children}</span>
             </div>

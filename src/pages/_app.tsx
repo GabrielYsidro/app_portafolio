@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div style={{minWidth : '500px'}}>
       <Head>
         <title>Porta Gabo</title>
         <meta name="Gabriel" content="Webserver" />
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <main>
         <Component {...pageProps} />
       </main>
-    </>
+    </div>
   );
 }
 
