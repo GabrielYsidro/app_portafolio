@@ -66,7 +66,7 @@ a:hover {
 }
 
 .derecha {
-    text-align: left; /* Centra el texto horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
     width: 50%; 
     font-size: 1.2em;
     font-weight: bold;
@@ -76,14 +76,48 @@ a:hover {
 .titulo2 {
     text-align: center;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 140%;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    display: inline-block;
+    padding: 8%;
+    cursor: pointer;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: text-shadow 0.1s ease-out;
+}
+
+.titulo2:hover {
+    text-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.4),  
+    0 0 30px rgba(0, 0, 0, 0.3),  
+    0 0 40px rgba(0, 0, 0, 0.2);  
+}
+
+.titulo2::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-shadow: 3px 2px 2px rgb(255, 255, 255);
+    transition: opacity 0.1s ease-out 0s, transform 0.1s ease-out 0.3s;
+}
+
+.titulo2:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(3) translateY(30px);
 }
 
 .contenido {
-    display: flex; /* Permite flexibilidad en la disposición */
-    align-items: center; /* Centra todo el contenido horizontalmente */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    text-align: center; /* Alinea todo el texto al centro */
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+    text-align: center;
 }
 /* Estilos para la imagen */
 .imagen img {
@@ -93,6 +127,7 @@ a:hover {
     object-fit: contain;
     border-radius: 50%;
     transition: box-shadow 0.4s ease-in-out;
+    margin-bottom: 4%;
 }
 .imagen img:hover {
     box-shadow : 0 0 15px 10px rgb(204, 226, 216);
