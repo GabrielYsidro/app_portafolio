@@ -5,9 +5,20 @@ body {
     margin: 0;
     font-family: 'Fira Code', sans-serif;
     background-color: #ace1af; /* Fondo negro */
-    color: #121212; /* Texto blanco */
     min-width: 800px;
+    transition : background 0.1s ease-in-out;
 }
+
+.degrade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    transition: background 0.2s ease-in-out;
+    z-index: -1;
+    }
 
 main {
     padding-top: 80px; /* Añade un padding superior para evitar que el contenido sea tapado por la barra */
@@ -57,14 +68,15 @@ a:hover {
 .derecha {
     text-align: left; /* Centra el texto horizontalmente */
     width: 50%; 
-    font-size: 100%;
+    font-size: 1.2em;
     font-weight: bold;
     text-shadow: 3px 2px 2px rgba(152, 221, 125, 0.945);
 }
 
 .titulo2 {
     text-align: center;
-    font-weight: bold; /* Alinea el título al centro */
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .contenido {
@@ -109,8 +121,15 @@ a:hover {
     font-size: 2em;
     text-shadow: 5px 3px 5px black;
     gap: 20px; 
+    transition: text-shadow 0.3s ease, color 0.3s;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
 }
 
+.principal:hover {
+    text-shadow: 5px 3px 5px rgba(44, 224, 98, 0.5);
+    -webkit-text-stroke: 0.8px white;
+    
+}
 
 .iconos {
     text-align: center;
@@ -122,6 +141,7 @@ a:hover {
     max-width: 1200px;
     width : 80%;
     margin: 0 auto;
+    margin-bottom: 4%;
 }
 
 .tabla{
@@ -140,11 +160,19 @@ a:hover {
     max-width: 400px;
 }
 
-
-
-.proyectos {
-    margin: 0 auto;
+.ejemplos {
+    text-align: center;
     margin-bottom: 5%;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #7a7f7b;
+    max-width: 1200px;
+    width : 80%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    padding-top:2.5%;
 }
 
 .contacto{

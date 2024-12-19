@@ -1,8 +1,8 @@
 .picture{
-    transition: box-shadow 0.3 ease-in-out;
+    transition: filter 0.4s ease-in-out;
 }
 
-.picture:hover {
-    box-shadow : 0 0 15px 5px rgba(255,255,255,0.7);
+.picture:hover{
+    filter: drop-shadow(2.5px 8px 8px rgba(0, 0, 0, 0.5));
 }
 
