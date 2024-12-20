@@ -11,10 +11,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Degrade from '../components/Degrade/Degrade';
 
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div style={{minWidth : '500px'}}>
+      <Degrade/>
       <Head>
         <title>Porta Gabo</title>
         <meta name="Gabriel" content="Webserver" />

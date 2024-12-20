@@ -9,7 +9,7 @@ export const Degrade : React.FC<DegradeProps> = ({children}) => {
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
 
-            degradado.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%,rgb(196, 230, 215), #ace1af 50%)`;
+            degradado.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%,)`;
         };
 
         document.addEventListener('mousemove', manejoMouse);

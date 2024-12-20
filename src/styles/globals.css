@@ -3,10 +3,11 @@
 /* Estilos generales */
 body {
     margin: 0;
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'Fira Code', sans-serif, monospace;
+    letter-spacing: 2px;
     background-image : url('../../public/4.png');
     background-repeat: repeat;
-    background-size: auto;
+    background-size: cover;
     min-width: 800px;
     transition : background 0.1s ease-in-out;
 }
@@ -28,7 +29,6 @@ main {
 
 /* Encabezados */
 h1, h2, h3, h4, h5, h6 {
-    color: #121212; /* Verde */
     margin: 20px 0;
 }
 
@@ -51,6 +51,9 @@ a:hover {
 
 
 .presentacion {
+    padding-top:5%;
+    margin-top:10%;
+    margin-bottom:10%;
     display: flex;
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */ 
@@ -64,7 +67,8 @@ a:hover {
 .izquierda {
     display: flex;
     flex-direction: column; 
-    width: 40%; 
+    width: 60%; 
+    padding: 10% 5% 0 0;
 }
 
 .derecha {
@@ -78,31 +82,43 @@ a:hover {
 .titulo2 {
     text-align: center;
     font-weight: bold;
-    font-size: 140%;
+    font-size: 250%;
     font-family: 'Roboto Slab', serif;
     position: relative;
+    color: #b0c3a4;
+    -webkit-text-stroke: 1.5px black;
     display: inline-block;
-    padding: 8%;
+    text-shadow: 5px 3px 2px black;
+    margin-top:25%;
+    margin-bottom:10%;
+}
+
+.Nombre{
+    position: relative;
+    color: #b0c3a4;
+    font-size : 200%;
+    -webkit-text-stroke: 1.5px black;
+    display: inline-block;
     cursor: pointer;
-    text-shadow: 0 0 0 rgba(0,0,0,0);
-    transition: text-shadow 0.1s ease-out;
+    text-shadow: 5px 3px 2px black;
+    transition: text-shadow 0.2s ease-out;
 }
 
-.titulo2:hover {
-    text-shadow: 
-    0 0 20px rgba(0, 0, 0, 0.4),  
-    0 0 30px rgba(0, 0, 0, 0.3),  
-    0 0 40px rgba(0, 0, 0, 0.2);  
+.Nombre:hover {
+    text-shadow:
+    0 0 20px #2e620f;
+    -webkit-text-stroke: 2px black;
+    transition: text-shadow 0.2s ease-out;
 }
 
-.titulo2::before{
+.Nombre::before{
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 10px;
     height: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #2e620f;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -110,9 +126,9 @@ a:hover {
     transition: opacity 0.1s ease-out 0s, transform 0.1s ease-out 0.3s;
 }
 
-.titulo2:hover::before {
+.Nombre:hover::before {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(3) translateY(30px);
+    transform: translate(-50%, -80%) scale(3) translateY(1em);
 }
 
 .contenido {
@@ -139,32 +155,33 @@ a:hover {
 .secciones {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 3%;
     flex-wrap: wrap; 
     flex-direction: column;
-    background-color: #7a7f7b;
     max-width: 1200px;
     margin: 0 auto;
-    border-radius: 10px;
     width : 80%;
-    padding-bottom: 2.5%;
+    font-size : 200%;
+    padding-top: 10%;
+    margin-top: 4%;
+    padding-bottom: 10%;
     margin-bottom: 4%;
 }
 
 .principal {
-    color: #ace1af;
+    color: #b0c3a4;
     margin:auto;
     padding-top: 3%;
     font-size: 2em;
     text-shadow: 5px 3px 5px black;
     gap: 20px; 
     transition: text-shadow 0.3s ease, color 0.3s;
-    -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
 }
 
 .principal:hover {
-    text-shadow: 5px 3px 5px rgba(44, 224, 98, 0.5);
-    -webkit-text-stroke: 0.8px white;  
+    text-shadow: 0 0 7px #2e620f;
+    -webkit-text-stroke: 1.5px rgb(8, 8, 8);  
 }
 
 .iconos {
@@ -201,7 +218,6 @@ a:hover {
     margin-bottom: 5%;
     gap: 10px;
     border-radius: 10px;
-    background-color: #7a7f7b;
     max-width: 1200px;
     width : 80%;
     margin: 0 auto;
@@ -216,7 +232,6 @@ a:hover {
     gap: 20px; 
     flex-wrap: wrap; 
     margin-top: 5%; 
-    background-color: #7a7f7b;
     max-width: 1200px;
     margin: auto;
     border-radius: 10px;
@@ -236,7 +251,7 @@ a:hover {
     display: inline-block;
     width: 2px;
     height: 1em;
-    background-color: #1DB954;
+    background-color: #b0c3a4;
     animation: blink 1s step-end infinite;
     position: relative;
     margin-left: 5px; /* Ajusta la posición del cursor */

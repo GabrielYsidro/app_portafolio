@@ -13,7 +13,7 @@ export const Home = () => {
           <div className="izquierda">
             <div className="titulo2">
               <h1>Hola! Me llamo</h1>
-              <h1>Gabriel Ysidro<span className="cursor"></span></h1>
+              <h1 className='Nombre'>Gabriel Ysidro<span className="cursor"></span></h1>
             </div>
             <div className="imagen">
               <a target="_blank" href="https://www.linkedin.com/in/gawayspa">
@@ -22,12 +22,11 @@ export const Home = () => {
             </div>
           </div>
           <div className="derecha">
-            <p>Soy un estudiante de Ingenieria de Sistemas en la Universidad de Lima.
-              Actualmente, me desempeño como Desarrollador Fullstack.
-              Trabajo con tecnologías como React y Next.js para el frontend,
-              así como PostgreSQL y Express.js para el backend.
-              Me gusta innovar con soluciones creativas y 
-              obtener resultados de calidad.
+            <p>Ingenieria de Sistemas (ULIMA)<br></br>
+              Desarrollador Fullstack <br></br>
+              React / Next.JS (FrontEnd) <br></br>
+              Flask / Express.js (Backend) <br></br>
+              Soluciones Creativas y Resultados de Calidad <br></br>
             </p>
           </div>
         </div>
