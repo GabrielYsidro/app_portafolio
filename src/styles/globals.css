@@ -4,7 +4,9 @@
 body {
     margin: 0;
     font-family: 'Fira Code', sans-serif;
-    background-color: #ace1af; /* Fondo negro */
+    background-image : url('../../public/4.png');
+    background-repeat: repeat;
+    background-size: auto;
     min-width: 800px;
     transition : background 0.1s ease-in-out;
 }
@@ -162,8 +164,7 @@ a:hover {
 
 .principal:hover {
     text-shadow: 5px 3px 5px rgba(44, 224, 98, 0.5);
-    -webkit-text-stroke: 0.8px white;
-    
+    -webkit-text-stroke: 0.8px white;  
 }
 
 .iconos {

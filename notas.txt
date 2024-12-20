@@ -1,0 +1,5 @@
+-Poner subtitulos en vertical lado izquierdo y renderizarlos
+ al scrollear (letra por letra)
+
+ 
+
